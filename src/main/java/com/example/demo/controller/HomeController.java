@@ -5,7 +5,6 @@ import com.example.demo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.apache.ibatis.annotations.ResultType;
 
 import java.util.List;
 
@@ -22,6 +21,11 @@ public class HomeController {
 
     @GetMapping("/json")
     public EmployeeBO json(){
-        return employeeService.getEmployee();
+        return employeeService.getEmployee(30L);
+    }
+
+    @GetMapping("/list")
+    public List<EmployeeBO> list(){
+        return employeeService.listEmployee();
     }
 }

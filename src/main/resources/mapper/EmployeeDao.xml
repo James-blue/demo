@@ -13,7 +13,7 @@
         <result property="email" column="email"></result>
         <result property="extPhone" column="extphone"></result>
         <result property="companyPhone" column="companyphone"></result>
-        <result property="userNumber" column="useruumber"></result>
+        <result property="userNumber" column="usernumber"></result>
         <result property="roleId" column="roleid"></result>
         <result property="status" column="status"></result>
     </resultMap>

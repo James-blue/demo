@@ -17,7 +17,7 @@ public class EmployeeService {
         return employeeDao.listEmployee();
     }
 
-    public EmployeeBO getEmployee(){
-        return employeeDao.getEmployee(30);
+    public EmployeeBO getEmployee(Long employeeId){
+        return employeeDao.getEmployee(employeeId);
     }
 }
