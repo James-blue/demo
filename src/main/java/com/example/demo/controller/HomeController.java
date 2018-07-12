@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.bo.EmployeeBO;
+import com.example.demo.bo.*;
 import com.example.demo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +10,11 @@ import java.util.List;
 
 @RestController
 public class HomeController {
+    @Autowired
+    EmployeeBO employeeBO;
+
+    @Autowired
+    CompanyBO companyBO;
 
     @Autowired
     EmployeeService employeeService;
@@ -27,5 +32,15 @@ public class HomeController {
     @GetMapping("/list")
     public List<EmployeeBO> list(){
         return employeeService.listEmployee();
+    }
+
+    @GetMapping("/company")
+    public CompanyBO getCompany(){
+        return companyBO;
+    }
+
+    @GetMapping("/employee")
+    public EmployeeBO getEmployeeBO(){
+        return employeeBO;
     }
 }

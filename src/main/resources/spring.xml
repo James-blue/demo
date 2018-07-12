@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="employeeBO" class="com.example.demo.bo.EmployeeBO">
+        <property name="cnName" value="李莉"></property>
+        <property name="id" value="123"></property>
+        <property name="companyName" value="zhaopin"></property>
+        <property name="email" value="lily@zhaopin.com.cn"></property>
+        <property name="loginName" value="lily"></property>
+        <property name="enName" value="lily"></property>
+        <property name="departmentName" value="department of product"></property>
+        <property name="employeeId" value="16402"></property>
+        <property name="extPhone" value="68547"></property>
+        <property name="companyPhone" value="010-12345678"></property>
+        <property name="jobName" value="producter"></property>
+        <property name="userNumber" value="zp16402"></property>
+    </bean>
+
+</beans>
