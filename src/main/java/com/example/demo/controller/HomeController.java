@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.bo.*;
-import com.example.demo.service.EmployeeService;
+import com.example.demo.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +17,7 @@ public class HomeController {
     CompanyBO companyBO;
 
     @Autowired
-    EmployeeService employeeService;
+    IEmployeeService employeeService;
 
     @GetMapping("/index")
     public String index(){
